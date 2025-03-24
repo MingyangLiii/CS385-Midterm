@@ -78,7 +78,7 @@ document.addEventListener("mouseup", () => {
         let hasUnselected = false;
         document.querySelectorAll(".item").forEach(item =>{
             const itembox = item.getBoundingClientRect();
-            if ((itembox.left > brushbox.right || itembox.right > brushbox.left) && (itembox.top < brushbox.bottom || itembox.bottom < brushbox.top)) {
+            if ((itembox.left > brushbox.right || itembox.right > brushbox.left) && ((itembox.top < brushbox.bottom && itembox.top > brushbox.top)|| (itembox.bottom > brushbox.top && itembox.bottom < brushbox.bottom))) {
                 itemsInBrushBox.push(item);
                 if (!item.classList.contains("selected")) {
                     allSelected = false;

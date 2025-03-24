@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brush Example</title>
+    <link rel="stylesheet" href="brush.css">
+</head>
+<body>
+    <div id="left" class="container">
+        <h2>Click Items to Select</h2>
+        <div id="item-list">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+            <div class="item">Item 9</div>
+            <div class="item">Item 10</div>
+            <div class="item">Item 11</div>
+            <div class="item">Item 12</div>
+        </div>
+    </div>
+    <div id="right" class="container">
+        <h2>Items Added</h2>
+        <div id="moved-list"></div>
+    </div>
+    <button id="move-btn">Add Selected Items</button>
+
+    <div id="mode-indicator">
+        
+        <p>Current Mode: <span id="current-mode">Click Mode</span></p>
+        <p>Press and hold Command (⌘) for 0.75 second to toggle Brush Mode</p>
+    </div>
+
+
+    <script src="brush.js"></script>
+</body>
+</html>

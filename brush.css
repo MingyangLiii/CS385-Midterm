@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.container {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 300px;
+    position: relative;
+}
+.item {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.selected {
+    background-color: lightblue;
+}
+.brush-box {
+    position: absolute;
+    border: 2px dashed blue;
+    background-color: rgba(173, 216, 230, 0.3);
+    pointer-events: none;
+}
+
+#mode-indicator {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+#mode-indicator p {
+    margin: 5px 0;
+}
